@@ -1,0 +1,243 @@
+*{
+    font-family: Comic Sans Ms,sans-serif;
+    color: rgb(64,89,110);
+}
+ .jar{
+    border: 2px solid  rgb(64,89,110);
+}
+h3{
+    color: rgb(129,40,35);
+}
+.navbar{
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+    background-color: white;
+}
+.nav-item{
+    color: black;
+}
+nav li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    transition: .3s;
+    
+}
+.nav-branding{
+    font-size: 2rem;
+    color:rgb(129,40,35);
+}
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+.bar{
+    display: block;
+    width:25px;
+    height:3px;
+    margin:5px auto;
+    background-color:black;
+    transition: .3s;
+}
+@media  (max-width:768px){
+.hamburger{
+    display: block;
+
+}
+.hamburger.active.bar:nth-child(2){
+    transition:translateX(-100%) ;
+    opacity: 0;
+    visibility: hidden;
+}
+.navbarhamburger.active.bar:nth-child(1){
+    transition:translateY(8px) rotate(45deg) ;
+    
+}
+.navbarhamburger.active.bar:nth-child(3){
+    transition:translateY(-8px) rotate(-45deg) ;
+    
+}
+.nav-menu{
+    position: fixed;
+    right: 100%;
+    top:70px;
+    gap:0;
+    flex-direction: column;
+    background-color:white;
+    width: 100%;
+    text-align: center;
+}
+.nav-item{
+    margin: 16px 0;
+}
+.nav-menu.active{
+    right:0;
+}
+    
+}
+
+
+.banner {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+ 
+.container{
+    display: flex;
+    justify-content: flex-start;
+}  
+.image-row {
+    display: flex; /* Use flexbox to create a horizontal row */
+    justify-content: space-between; /* Distribute items evenly along the row */
+  }
+  
+  .image-container {
+    flex: 1; /* Distribute available space equally among containers */
+    text-align: center; /* Center align content inside each container */
+    padding: 10px; /* Add some spacing around each container */
+  }
+  
+  .image-container img {
+    max-width: 100%; /* Ensure images don't exceed their container width */
+    height: auto; /* Maintain aspect ratio */
+  }
+  .image-container-4 {
+    display: flex;
+    align-items: center; /* Vertically align items */
+}
+
+.image {
+    max-width: 50%; /* Limit image width to half of the container */
+}
+
+.container-4 {
+    flex: 1; /* Allow content to take up remaining space */
+    padding: 20px; /* Add padding for spacing */
+}
+
+/* Additional styling for list items if needed */
+.container-4 ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+.image-container-3 {
+    display: flex;
+    align-items: center; /* Vertically align items */
+}
+
+
+
+
+
+
+/* .image-container-3 {
+    display: flex;
+    align-items: center; 
+}
+
+.image {
+    max-width: 50%; 
+}
+
+.container-3 {
+    flex: 1; 
+    padding: 20px; 
+} */
+
+
+/* .container-3 ul {
+    list-style: disc;
+    padding-left: 20px;
+} */
+
+hr{
+    color:rgb(129,40,35);
+}
+/* Add styles to center align footer content */
+#footer {
+    text-align: center;
+    padding: 20px;
+   
+   
+    margin: 0 auto; /* Center the footer horizontally */
+    max-width: 800px; /* Adjust the max-width as needed */
+}
+
+
+/* Adding media query for responsiveness */
+@media screen and (max-width: 768px) {
+    *{
+     font-size: medium;
+    }
+    
+    
+    .image-row{
+        display: block;
+    }
+    .container-3 {
+        display: flex;
+        flex-direction: column;
+    }
+    .image-container-3 {
+        flex-direction: column-reverse; 
+    }
+     
+    .responsive-image-3{
+        width: 100%;
+        height: 100%;
+        object-fit: cover; 
+        margin-bottom: 20px; 
+      
+    }
+
+    .responsive-image-2{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+
+    .image-container-4 {
+        display: block;
+    }
+    
+    
+    #footer {
+        max-width: 100%; /* Adjust width for smaller screens */
+        padding: 10px; /* Adjust padding for smaller screens */
+        font-size: 20px;
+    }
+   
+    
+}
+.last-container{
+    padding: 25px;
+}
+/* Add styles to display image and heading in the same line */
+.header {
+    display: flex;
+    align-items: center; /* Center vertically */
+    padding: 10px; /* Add some padding for spacing */
+}
+
+.header img {
+    max-width: 30px; /* Adjust image size as needed */
+    margin-right: 10px; /* Add spacing between image and heading */
+}
+.red-hr {
+    border-color: red;
+    border-width: 2px;
+}
+
+
