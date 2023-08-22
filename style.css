@@ -87,11 +87,11 @@ a{
 }
 
 
-.banner {
+/* .banner {
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
+  } */
  
 .container{
     display: flex;
@@ -181,7 +181,10 @@ hr{
      font-size: medium;
     }
     
-    
+    .text-1{
+        color: aliceblue;
+        font-size: 10px;
+    }
     .image-row{
         display: block;
     }
@@ -239,5 +242,31 @@ hr{
     border-color: red;
     border-width: 2px;
 }
+.container-1 {
+    position: relative; 
+  }
+  
+  .banner-container {
+    position: relative; 
+    display: inline-block; 
+  }
+  
+  .banner {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .text {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    text-align: center; 
+    
+    padding: 10px; 
+    border-radius: 5px; 
+  }
+  
 
 
